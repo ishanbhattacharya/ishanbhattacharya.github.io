@@ -252,6 +252,7 @@ h2.slogan{
 	margin: 0 0 0 30px;
 }
 .blog_timeline ul li{
+	float: none;
 	width: 400px;
 	margin: 0 0 0;
 }
