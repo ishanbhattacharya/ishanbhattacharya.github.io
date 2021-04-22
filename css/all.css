@@ -136,7 +136,7 @@ a:hover{text-decoration:underline;}
 }
 .wrapper-holder.grey{background: #28292b; height: 100%;}
 #header {
-	max-width: 1170px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 40px 0 40px;
 	position:relative;
@@ -589,7 +589,7 @@ transition: all 0.5s ease-in-out;
 }
 /* begin add	 */
 .popup_portfolio{
-	max-width: 1132px;
+	max-width: 95%;
 }
 .popup_portfolio h3{
 	padding-top:26px;
