@@ -579,7 +579,7 @@ transition: all 0.5s ease-in-out;
 .footer-content .social li.email a{background: url(../images/icon_email.png) no-repeat 50% 50% ; background-size: 20px auto;}
 .footer-content .social li.facebook a{background: url(../images/icon_fb.png) no-repeat 50% 50%; background-size: 10px auto;	}
 .footer-content .social li.instagram a{background: url(../images/icon_instagram.png) no-repeat 50% 50% ; background-size: 20px auto;}
-.footer-content .social li.linkedin a{background: url(../images/icon_linkedin.png) no-repeat 50% 50% ; background-size: 20px auto;}
+.footer-content .social li.linkedin a{background: url(../images/icon_instagram.png) no-repeat 50% 50% ; background-size: 20px auto;}
 .footer-content .social li.github a{background: url(../images/icon_github.png) no-repeat 50% 50% ; background-size: 20px auto;}
 .footer-content p{
 	font-family: 'novecentosanswide';
