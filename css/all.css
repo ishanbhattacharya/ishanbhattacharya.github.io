@@ -232,12 +232,32 @@ h2.slogan{
 	padding: 0 auto;
 	overflow: hidden;
 }
+.box_timeline_resume{
+	/* position: relative;
+	padding: 0 auto;
+	overflow: hidden; */
+	width: 90%;
+	height: auto;
+	max-width: 1000px;
+	margin: 10px 0 10px 0;
+	position: relative;
+	padding: 20px 0 20px;
+	/* background: #1e1e1e; */
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease; 
+	overflow: hidden;
+}
 .blog_timeline{
 	position: relative;
 	padding: 0 auto;
 	overflow: hidden;
 }
 .box_timeline ul{
+	position: relative;
+	overflow: hidden;
+}
+.box_timeline_resume ul{
 	position: relative;
 	overflow: hidden;
 }
@@ -250,6 +270,9 @@ h2.slogan{
 	width: 400px;
 	margin: 0 0 0 30px;
 }
+.box_timeline_resume ul li{
+	margin: 0 0 30px;
+}
 .blog_timeline ul li{
 	float: none;
 	width: 400px;
@@ -258,7 +281,47 @@ h2.slogan{
 .box_timeline ul li img {
   padding-left: 50px;
 }
+
+.resume_items ul{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.resume_items ul li{
+	font-family: 'novecentosanswide';
+	float:left;
+	/* width: 400px; */
+	margin: 0 0px 10px 5px;
+	border-radius: 10px;
+	background-color: #00aeef;
+	border: none;
+	color: white;
+	padding: 5px 8px 5px 8px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	font-size: 16px;
+	/* font-weight: bold; */
+  /* margin: 4px 2px; */
+}
+.resume_items ul li:nth-child(even) { background: #2797c7; }
+
+.box_timeline_resume ul li img {
+	padding-left: 50px;
+  }
 .box_timeline ul li:first-child{margin: 0;}
+/* .box_timeline_resume ul li:first-child{margin: 0;} */
+.box_timeline_resume table {
+	width: 100%;
+}
+.box_timeline_resume th {
+	font-weight: bold;
+}
+.box_timeline_resume th, td {
+	text-align: left;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
 .box_timeline h3{
 	font-family: 'novecento_sans_widemedium';
 	color: #00aeef;
@@ -269,6 +332,34 @@ h2.slogan{
 	margin: 0 0 10px;
 }
 .box_timeline p{
+	font-family: 'novecentosanswide';
+	color: #a4a7ac;
+	font-size: 16px;
+	line-height: 18px;
+	display: block;
+	text-align: justify;
+	margin: 0 0 10px;
+}
+.box_timeline_resume h2{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'novecento_sans_widebook';
+	font-size: 30px;
+	line-height: 32px;
+	color: #fff;
+	margin: 0 0 40px;
+}
+.box_timeline_resume h3{
+	font-family: 'novecento_sans_widemedium';
+	color: #00aeef;
+	font-size: 14px;
+	line-height: 16px;
+	display: block;
+	text-align: justify;
+	margin: 0 0 10px;
+}
+.box_timeline_resume p{
 	font-family: 'novecentosanswide';
 	color: #a4a7ac;
 	font-size: 16px;
