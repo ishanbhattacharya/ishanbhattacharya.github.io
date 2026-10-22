@@ -1,211 +1,158 @@
-@media only screen and (max-width : 1210px) {
+/* Layout corrections for the original Home and Resume pages.
+   Colors, fonts, content, badges, portrait, and social icons remain in all.css. */
+:root {
+  --page-gutter: clamp(16px, 4vw, 32px);
 }
-@media only screen and (max-width : 1190px) {
-	#main {margin:0 20px;}
-	.box_timeline_holder{padding: 0 0 0 60px;}
-	.box_timeline{padding: 0 60px 0 0;}
-	.box_timeline ul li{margin: 0 0 0 25px;}
-	.skills_holder .column{width: 450px;}
-	.plagin_list li{margin: 0 0 0 2%;display: inline-block;float: none;width: 10%;height: 110px;}
-	.item-list{margin: 0;}
-/* 	.item-list li{ width: 30%; margin-left: 0;text-align: center;} */
-
-	#container.item-list{width: 900px; margin: 0 auto;}
+html, body { height: auto; min-height: 100%; }
+body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  height: auto;
 }
-@media only screen and (max-width : 1130px) {
-	.box_timeline_holder{padding: 0 0 0 40px;}
-	.box_timeline{padding: 0 40px 0 0;}
-	.box_timeline ul li{margin: 0 0 0 15px;}
-	.images_holder{margin: 5px 80px 0 0;}
-	.box_contact span{font-size: 25px;}
+.wrapper-holder { display: block; }
+.page-content { display: flex; flex-direction: column; flex: 1; }
+.page-content > .wrapper-holder.grey { flex: 1; height: auto; }
+#header {
+  width: min(100%, 1170px);
+  padding: clamp(20px, 3vw, 32px) var(--page-gutter);
 }
-@media only screen and (max-width : 1100px) {
-	.plagin_list li{ }
+#nav { display: block; width: auto; margin: 0; padding: 0; }
+#nav ul { display: flex; justify-content: center; gap: clamp(24px, 6vw, 60px); }
+#nav ul li, #nav ul li:first-child { float: none; padding: 0; }
+#nav ul a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 10px 4px;
+  font-size: clamp(16px, 1.6vw, 18px);
 }
-@media only screen and (max-width : 1050px) {
-	.box_timeline_holder{padding: 0 0 0 20px;}
-	.box_timeline{padding: 0 20px 0 0;}
-	.box_timeline ul li{margin: 0 0 0 5px;}
-	.plagin_list li{ height: 90px;}
-/* 	.item-list li{ width: 49%;} */
+.logo {
+  margin: clamp(20px, 3vw, 40px) 0 0;
+  font-size: clamp(2rem, 6.4vw, 4.5rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
 }
-@media only screen and (max-width : 980px) {
-
-	#nav {float:none; width: 100%;}
-	#nav ul {
-		text-align:center;
-		margin: 0;
-	}
-	#nav ul li {
-		display:inline-block;
-		padding: 0 15px;
-		float:none;
-	}
-	#nav ul a {
-		font-size: 15px;
-	}
-	.logo {
-		margin: 0 auto;
-		font-size: 62px;
-		line-height: 90px;
-	}
-	#header {
-		padding: 20px 10px;
-	}
-	.box_timeline_holder{padding: 0 0 0 10px;}
-	.box_timeline{padding: 0 10px 0 0;}
-	.box_timeline ul li{width: 340px; margin: 0;}
-	.skills_holder .column{
-		width: 100%;
-		float: none;
-		display: block;
-	}
-	.skills_holder .column.column-add {padding: 0 !important;}
-	.plagin_list.none{display: block;width: 540px;margin: 0 auto 30px;}
-	.plagin_list{display: none;}
-	.plagin_list.none li{height: 121px;width: 121px;}
-	.box_contact span{font-size: 23px;margin: 0 0 40px;}
-	.images_holder{margin: 5px 30px 0 0;width: 300px;}
-	.box_contact{margin: 40px 0 0 0;}
-	#main h2{margin: 20px 0 20px;}
-	#main .skills_holder h2{margin: 0 0 25px;}
-	h2.slogan{
-		padding-bottom: 14px;
-	}
-	#container.item-list{width: 600px;}
-	.sub_nav li{padding:10px 0;}
+#main {
+  width: min(1170px, calc(100% - var(--page-gutter) * 2));
+  margin: 0 auto;
+  padding: clamp(40px, 8vw, 120px) 0;
 }
-@media only screen and (max-width : 840px) {
-	#header {
-		padding: 15px 0 20px 0;
-	}
-	.box_timeline ul li{margin: 0;width: 80%;float: none;}
-	#main {padding: 40px 0 40px;}
-	#main h2{margin: 0 0 20px;}
-	.images_holder {
-		margin: 5px auto 20px;
-		width: 300px;
-		float: none;
-	}
-	.box_contact {
-		margin: 40px auto 0;
-		width: 460px;
-	}
-	.box_timeline_holder,.box_timeline{background: none;}
-	.box_timeline ul li img {padding-left: 0;}
-	.box_timeline p{text-align: center;}
+.box_timeline_holder, .box_timeline { padding: 0; overflow: visible; }
+.box_timeline > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 400px));
+  justify-content: center;
+  align-items: center;
+  gap: clamp(32px, 5vw, 64px);
+  overflow: visible;
 }
-@media only screen and (max-width : 768px) {
-	.footer-content {padding: 20px 10px 15px;}
-	.footer-content .social {margin: 0 auto 15px;}
-	#nav {padding: 0;margin: 0 0 20px;}
-	#nav ul li {
-		display:inline-block;
-		padding: 0 4px 0 4px;
-	}
-	#nav ul a {
-		display:inline-block;
-		padding: 8px;
-	}
-	#nav ul a:hover {
-		color: #fff;
-		text-decoration:none;
-	}
-	.logo {font-size: 50px;line-height: 62px;}
-	#wrapper.inner .menu_trigger,#wrapper.portfolio .menu_trigger{top: 6px;}
+.box_timeline > ul > li, .box_timeline > ul > li:first-child {
+  float: none;
+  width: auto;
+  min-width: 0;
+  margin: 0;
 }
-@media only screen and (max-width : 680px) {
-	#container.item-list{width: 300px;}
-	.item-list li{margin-left:0;}
+#main h2 { margin: 0 0 28px; line-height: 1.3; }
+.box_timeline p, .box_timeline_resume p {
+  line-height: 1.6;
+  text-align: left;
+  overflow-wrap: break-word;
 }
-@media only screen and (max-width : 640px) {
-	.menu_trigger {
-		top: 25px;
-	}
-	.plagin_list.none{width: 480px;}
-	.plagin_list.none li{width: 20%;margin: 0 0 0 2%;height: 95px;}
-	.skills_holder{margin: 0 0 10px;}
-	.logo{
-		font-size: 48px;
-		line-height: 54px;
-	}
+.box_timeline p { margin: 0; }
+.box_timeline p + p { margin-top: 20px; }
+.wrapper-holder.grey p { padding: 0; }
+.box_timeline ul li img {
+  display: block;
+  width: min(100%, 270px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
 }
-@media only screen and (max-width : 600px) {
-/* 	.sub_nav li{padding: 0 0 0 30px;} */
-	.logo{
-		font-size: 40px;
-		line-height: 40px;
-	}
-	#header {
-		padding: 10px 10px;
-	}
-	#nav ul a {
-		font-size: 12px;
-	}
-/* 	.item{
-		width: 180px;
-	}
-	.item .item-content{
-		height: 180px;
-	}
-	.item .item-content p{
-		display: none
-	} */
+.blogcontainer#main {
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  padding: clamp(24px, 4vw, 48px) 0;
 }
-@media only screen and (max-width : 550px) {
-	.plagin_list.none{width: 420px;}
-	.plagin_list.none li{width: 20%;margin: 0 0 0 2%;height: 84px;}
-	.sub_nav li{padding: 0;text-align: center;margin: 0 0 15px; display: block;}
-	.sub_nav{margin: 0 auto 40px;}
-	.box_contact {
-		margin: 40px auto 0;
-		width: 300px;
-	}
-	.box_contact span.email{font-size: 14px;}
-	#wrapper.portfolio #main{padding:93px 0 0 0; }
-	.logo{margin: 0 auto;font-size: 34px;		line-height: 30px;}
-	#header {
-		padding: 0 0 15px 0;
-	}
+.box_timeline_resume {
+  width: min(1000px, calc(100% - var(--page-gutter) * 2));
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: visible;
 }
-@media only screen and (max-width : 480px) {
-	.logo{
-		font-size: 38px;
-		line-height: 48px;
-	}
-	.slogan{
-		font-size: 14px;
-		line-height: 16px;
-	}
-	.plagin_list.none{display: none;}
-	.plagin_list{display: block;}
-	.plagin_list li,.plagin_list li:first-child{display: inline-block; vertical-align: top; width: 45%; height: auto; border: 0;margin: 0 2% 2% 2%;}
-	.plagin_list li a,.plagin_list li:first-child a{width: 121px;height: 121px;border: 1px solid #46484c;border-radius: 50%;margin: 0 auto;}
-	.plagin_list{margin: 0 0 20px;}
-	#main{margin: 0 10px;}
-/* 	.item-list{margin: 0;}
-	.item-list li{margin: 0 0 20px;} */
+.box_timeline_resume ul { overflow: visible; }
+.box_timeline_resume > ul > li { margin: 0; padding: clamp(24px, 4vw, 40px) 0; }
+.box_timeline_resume h2 { font-size: clamp(24px, 3.5vw, 30px); }
+.box_timeline_resume h3 { line-height: 1.5; text-align: left; }
+.resume_items ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 6px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width:420px) {
-/* 	.item{
-		width: 130px;
-	}
-	.item .item-content{
-		height: 130px;
-		padding: 0 15px;
-	} */
-	.logo{
-		font-size: 36px;
-		line-height: 38px;
-	}
-	.slogan{
-		font-size: 10px;
-		line-height: 12px;
-	}
-	.box_contact {
-		margin: 40px auto 0;
-		width: 280px;
-	}
-	.box_contact span.email{font-size: 12px;}
-	.images_holder{width: 280px;margin: 0 auto 20px;}
+.resume_items ul li {
+  float: none;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.box_timeline_resume table { width: 100%; table-layout: fixed; line-height: 1.5; }
+.box_timeline_resume th, .box_timeline_resume td { padding: 8px; vertical-align: top; overflow-wrap: break-word; }
+.box_timeline_resume th:first-child { width: 10%; }
+.box_timeline_resume th:nth-child(2) { width: 15%; }
+.box_timeline_resume th:last-child { width: 15%; }
+#footer { display: block; margin-top: auto; overflow: visible; }
+.footer-content {
+  width: min(1170px, calc(100% - var(--page-gutter) * 2));
+  padding: 24px 0 20px;
+}
+.footer-content .social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: auto;
+  max-width: 100%;
+  overflow: visible;
+}
+.footer-content .social li, .footer-content .social li:first-child {
+  float: none;
+  flex: 0 0 50px;
+  margin: 0;
+}
+a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+@media (max-width: 799px) {
+  .box_timeline > ul { grid-template-columns: minmax(0, 600px); }
+  .box_timeline ul li img { width: min(80%, 270px); }
+}
+@media (max-width: 600px) {
+  /* Keep the same table and headers, with labeled cells on narrow screens. */
+  .box_timeline_resume table, .box_timeline_resume tbody { display: block; }
+  .box_timeline_resume thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .box_timeline_resume tr { display: block; padding: 12px 0; border-bottom: 1px solid #ddd; }
+  .box_timeline_resume td {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 12px;
+    padding: 6px 0;
+    border: 0;
+  }
+  .box_timeline_resume td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #nav ul a, .footer-content .social li, .box_timeline_resume { transition: none; }
 }

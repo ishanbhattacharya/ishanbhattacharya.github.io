@@ -4,142 +4,225 @@
 <!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Resume | Ishan Bhattacharya</title>
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/all.css" />
 	<link rel="stylesheet" href="css/screen.css" />
+	<link rel="stylesheet" href="css/resume.css" />
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="resume-page">
 	<div id="wrapper">
 		<div class="wrapper-holder">
 			<header id="header">
-				<a class="menu_trigger" href="#">menu</a>
-					<nav id="nav">
+					<nav id="nav" aria-label="Main navigation">
 						<ul>
-							<li><a href="https://ishanbhattacharya.com">Home</a></li>
-							<li><a href="blog">Blog</a></li>
-							<li><a href="projects">Projects</a></li>
-							<li><a class="active" href="resume">Resume</a></li>
+							<li><a href="/">Home</a></li>
+							<li><a class="active" aria-current="page" href="/resume.html">Resume</a></li>
 						</ul>
 					</nav>
 				<h1 class="logo">Ishan Bhattacharya</h1>
 			</header>
 		</div>
-		<center>
-		<div class="blogcontainer">
-			<!-- <section id="main"> -->
-				<div class="box_timeline_holder">
-					<div class="box_timeline_resume">
-						<h3 style="font-size: 20px; text-align:center; line-height: 150%;">THIS SPACE IS UNDER CONSTRUCTION. INTERESTED TO TALK? DROP ME A <a href="mailto:ishanbhattacharya.kgp@gmail.com" style="color:white;">MAIL</a>!</h3>
-						<BR>
-						<ul>
-							<li>
-								<h2>SKILLS</h2>
-								<h3>PROGRAMMING</h3>
-								<div class="resume_items">
-								<ul>
-									<li>C</li><li>C++</li><li>C#</li><li>Java</li><li>Go</li>
-									<li>Python</li><li>SQL</li><li>Scala</li><li>HTML</li>
-								</ul>
-								</div>
-								<h3>SOFTWARE</h3>
-								<div class="resume_items">
-								<ul>
-									<li>Octave</li><li>Anaconda</li><li>Android Studio</li><li>Airflow</li><li>Git</li>
-									<li>Docker</li><li>Redash</li><li>Bigquery</li><li>Google Cloud Platform</li><li>Kubernetes</li>
-									<li>Unity3D</li><li>MS-Office</li><li>Kafka</li><li>Flink</li>
-								</ul>
-								</div>
-								<h3>LIBRARIES</h3>
-								<div class="resume_items">
-								<ul>
-									<li>Scikit-Learn</li><li>Pandas</li><li>NumPy</li><li>PyTorch</li><li>Tensorflow</li><li>Keras</li>
-									<li>River</li><li>NLTK</li><li>Spacy</li><li>Streamlit</li><li>Polars</li><li>Flask</li>
-								</ul>
-							</li>
-							<li>
-								<h2>EDUCATION</h2>
-								<table>
-									<tr>
-									  <th>Year</th>
-									  <th>Degree</th>
-									  <th>Institution</th>
-									  <th>CGPA/%</th>
-									</tr>
-									<tr>
-									  <td>2022</td>
-									  <td>B.Tech.</td>
-									  <td>Indian Institute of Technology, Kharagpur</td>
-									  <td>8.62</td>
-									</tr>
-									<tr>
-										<td>2018</td>
-										<td>AISSCE</td>
-										<td>Jawahar Vidya Mandir, Ranchi</td>
-										<td>95%</td>
-									</tr>
-									<tr>
-										<td>2016</td>
-										<td>AISSE</td>
-										<td>DAV Public School, Ranchi</td>
-										<td>10.00</td>
-									</tr>
-								  </table>
-							</li>
-							<li>
-								<h2>COURSEWORK</h2>
-								<h3>CURRICULUM</h3>
-								<div class="resume_items">
-								<ul>
-									<li>Programming & Data Structures</li><li>Probability & Statistics</li><li>Regression & Time Series Model</li><li>Data Analytics</li>
-										<li>Machine Learning: F&A</li><li>Deep Learning: F&A</li><li>Artificial Intelligence: F&A</li>
-										<li>Big Data Processing</li><li>Economics</li><li>Engineering B-Plan Development</li><li>Marketing and Market Research</li>
-								</ul>
-								</div>
-								<h3>ONLINE CERTIFICATIONS</h3>
-								<div class="resume_items">
-								<ul>
-									<li>Data Analytics, Google</li><li>Market Concepts, Bloomberg</li><li>Machine Learning, Stanford</li>
-									<li>Neural Networks, deeplearning.ai</li><li>Python Programming, Michigan</li><li>Java for Android, Vanderbilt</li>
-								</ul>
-							</li>
-							<li>
-								<h2>ACHIEVEMENTS & EXTRA-CURRICULARS</h2>
-								<P>• Awarded Institute Silver Medal for achieving Department Rank 1 at IIT Kharagpur.</P>
-								<P>• Responsible as Subhead - Headstart RMSoEE (student body of entrepreneurship school, IITKGP) for conduction of entrepreneurial events and activities within the institute.</P>
-								<P>• Selected for NSO Cricket '18-'20 (Extra Academic Activity, IITKGP) out of 250+ participants.</P>
-								<P>• Part of Short Film Making & Design Team of Radhakrishnan Hall in General Championships.</P>
-							</li>
-						</ul>
-					</div>
-				</div>
-			<!-- </section> -->
+		<div class="page-content">
+		<main class="blogcontainer" id="main" aria-label="Résumé">
+      <div class="resume-layout">
+        <section class="resume-section" aria-labelledby="experience-heading">
+          <h2 id="experience-heading">EXPERIENCE</h2>
+          <div class="resume-section-body">
+          <article class="resume-company" aria-label="Adobe">
+            <h3>Adobe</h3>
+            <ul class="resume-roles">
+              <li>
+                <span class="resume-role-title">Machine Learning Engineer</span>
+                <span class="resume-role-date"><time datetime="2024-07">Jul 2024</time> – Present</span>
+              </li>
+            </ul>
+            <p>Working on typography features in Illustrator. Also worked on font search and surface mapping workflows, owning the ML pipeline from data through deployment. Multiple patents filed for computer vision and generative AI applications.</p>
+          </article>
+          <article class="resume-company" aria-label="ShareChat">
+            <h3>ShareChat</h3>
+            <ul class="resume-roles">
+              <li>
+                <span class="resume-role-title">Machine Learning Engineer</span>
+                <span class="resume-role-date"><time datetime="2022-06">Jun 2022</time> – <time datetime="2024-06">Jun 2024</time></span>
+              </li>
+            </ul>
+            <p>Worked on Explore and Livestream features in Moj. Trained candidate generators and targeting models for live-stream recommendations and notifications. Took up engineering duties for cost optimization across DAGs and services.</p>
+          </article>
+          <article class="resume-company" aria-label="Axxela">
+            <h3>Axxela</h3>
+            <ul class="resume-roles">
+              <li>
+                <span class="resume-role-title">Market Analyst Intern</span>
+                <span class="resume-role-date"><time datetime="2021-06">Jun 2021</time> – <time datetime="2021-07">Jul 2021</time></span>
+              </li>
+            </ul>
+            <p>Traded 10-year U.S. Treasury Note futures and went deep into technical analysis, risk management and economic research. Analyzed Eurodollar spreads and how they behaved around FFTR hike/cut cycles.</p>
+          </article>
+          </div>
+        </section>
+        <section class="resume-section" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">SKILLS</h2>
+          <div class="resume-section-body">
+          <div class="resume-group">
+            <h3>PROGRAMMING</h3>
+            <div class="resume_items">
+              <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>Go</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Scala</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+          </div>
+          <div class="resume-group">
+            <h3>SOFTWARE</h3>
+            <div class="resume_items">
+              <ul>
+                <li>Octave</li>
+                <li>Anaconda</li>
+                <li>Android Studio</li>
+                <li>Airflow</li>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>Redash</li>
+                <li>Bigquery</li>
+                <li>Google Cloud Platform</li>
+                <li>Kubernetes</li>
+                <li>Unity3D</li>
+                <li>MS-Office</li>
+                <li>Kafka</li>
+                <li>Flink</li>
+              </ul>
+            </div>
+          </div>
+          <div class="resume-group">
+            <h3>LIBRARIES</h3>
+            <div class="resume_items">
+              <ul>
+                <li>Scikit-Learn</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>PyTorch</li>
+                <li>Tensorflow</li>
+                <li>Keras</li>
+                <li>River</li>
+                <li>NLTK</li>
+                <li>Spacy</li>
+                <li>Streamlit</li>
+                <li>Polars</li>
+                <li>Flask</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="resume-section" aria-labelledby="education-heading">
+          <h2 id="education-heading">EDUCATION</h2>
+          <div class="resume-section-body">
+            <table class="resume-education" role="table" aria-labelledby="education-heading">
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th scope="col" role="columnheader">Year</th>
+                  <th scope="col" role="columnheader">Degree</th>
+                  <th scope="col" role="columnheader">Institution</th>
+                  <th scope="col" role="columnheader">CGPA/%</th>
+                </tr>
+              </thead>
+              <tbody role="rowgroup">
+              <tr role="row">
+                <td role="cell" data-label="Year">2022</td>
+                <td role="cell" data-label="Degree">B.Tech.</td>
+                <td role="cell" data-label="Institution"><div>Indian Institute of Technology, Kharagpur<span class="resume-education-detail">Microspecialization in Artificial Intelligence and Applications</span></div></td>
+                <td role="cell" data-label="CGPA/%">8.62</td>
+              </tr>
+              <tr role="row">
+                <td role="cell" data-label="Year">2018</td>
+                <td role="cell" data-label="Degree">AISSCE</td>
+                <td role="cell" data-label="Institution">Jawahar Vidya Mandir, Ranchi</td>
+                <td role="cell" data-label="CGPA/%">95%</td>
+              </tr>
+              <tr role="row">
+                <td role="cell" data-label="Year">2016</td>
+                <td role="cell" data-label="Degree">AISSE</td>
+                <td role="cell" data-label="Institution">DAV Public School, Ranchi</td>
+                <td role="cell" data-label="CGPA/%">10.00</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="resume-section" aria-labelledby="coursework-heading">
+          <h2 id="coursework-heading">COURSEWORK</h2>
+          <div class="resume-section-body">
+          <div class="resume-group">
+            <h3>CURRICULUM</h3>
+            <div class="resume_items">
+              <ul>
+                <li>Programming &amp; Data Structures</li>
+                <li>Probability &amp; Statistics</li>
+                <li>Regression &amp; Time Series Model</li>
+                <li>Data Analytics</li>
+                <li>Machine Learning: F&amp;A</li>
+                <li>Deep Learning: F&amp;A</li>
+                <li>Artificial Intelligence: F&amp;A</li>
+                <li>Big Data Processing</li>
+                <li>Economics</li>
+                <li>Engineering B-Plan Development</li>
+                <li>Marketing and Market Research</li>
+              </ul>
+            </div>
+          </div>
+          <div class="resume-group">
+            <h3>ONLINE CERTIFICATIONS</h3>
+            <div class="resume_items">
+              <ul>
+                <li>Data Analytics, Google</li>
+                <li>Market Concepts, Bloomberg</li>
+                <li>Machine Learning, Stanford</li>
+                <li>Neural Networks, deeplearning.ai</li>
+                <li>Python Programming, Michigan</li>
+                <li>Java for Android, Vanderbilt</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="resume-section" aria-labelledby="achievements-heading">
+          <h2 id="achievements-heading">ACHIEVEMENTS &amp; EXTRA-CURRICULARS</h2>
+          <div class="resume-section-body">
+            <ul class="resume-achievements">
+              <li>Awarded Institute Silver Medal for achieving Department Rank 1 at IIT Kharagpur.</li>
+              <li>Responsible as Subhead - Headstart RMSoEE (student body of entrepreneurship school, IITKGP) for conduction of entrepreneurial events and activities within the institute.</li>
+              <li>Selected for NSO Cricket &#x27;18-&#x27;20 (Extra Academic Activity, IITKGP) out of 250+ participants.</li>
+              <li>Part of Short Film Making &amp; Design Team of Radhakrishnan Hall in General Championships.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
 		</div>
-		</center>
 		<footer id="footer">
 			<div class="footer-content">
 				<ul class="social">
 					<li class="email"><a href="mailto:ishanbhattacharya.kgp@gmail.com">Email</a></li>
-					<li class="facebook"><a href="https://www.facebook.com/bhattacharya.ish/" target="_blank">Facebook</a></li>
-					<li class="instagram"><a href="https://www.instagram.com/bhattacharya.ishan/" target="_blank">Instagram</a></li>
-					<li class="linkedin"><a href="https://www.linkedin.com/in/ishan-bhattacharya" target="_blank">LinkedIn</a></li>
-					<li class="github"><a href="https://github.com/ishanbhattacharya" target="_blank">GitHub</a></li>
+					<li class="linkedin"><a href="https://www.linkedin.com/in/ishan-bhattacharya" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+					<li class="github"><a href="https://github.com/ishanbhattacharya" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 				</ul>
-				<p class="copy" style="font-size:15px">&copy; Ishan Bhattacharya, 2023</p>
+				<p class="copy" style="font-size:15px">&copy; Ishan Bhattacharya</p>
 			</div>
 		</footer>	
 	</div>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/cells-by-row.js"></script>
-	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
